@@ -1,0 +1,139 @@
+/* ===================== RESET ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(
+    135deg,
+    rgba(120, 60, 60, 0.15),
+    rgba(255, 255, 255, 0.8)
+  );
+  background-attachment: fixed;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ===================== SECCIÓN EXPERIENCIA ===================== */
+.experiencia {
+  width: 90%;
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(120, 60, 60, 0.3);
+  padding: 40px;
+  position: relative;
+}
+
+/* ===================== TÍTULO ===================== */
+.experiencia h1 {
+  text-align: center;
+  color: rgb(120, 60, 60);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #d03d3d;
+  display: inline-block;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+/* ===================== BOTÓN VOLVER ===================== */
+.btn-volver {
+  display: inline-block;
+  margin-bottom: 30px;
+  background-color: rgba(120, 60, 60, 0.15);
+  color: rgb(120, 60, 60);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid rgba(120, 60, 60, 0.4);
+}
+
+.btn-volver:hover {
+  background-color: rgb(120, 60, 60);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(120, 60, 60, 0.3);
+}
+
+/* ===================== BLOQUES DE TRABAJO ===================== */
+.trabajo {
+  margin-bottom: 35px;
+  background-color: #fafafa;
+  padding: 20px;
+  border-left: 6px solid #d03d3d;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.trabajo:hover {
+  background-color: #d03d3d;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(208, 61, 61, 0.4);
+  transform: translateY(-5px);
+}
+
+.trabajo h2 {
+  font-size: 1.3rem;
+  color: rgb(120, 60, 60);
+}
+
+.trabajo:hover h2 {
+  color: #fff;
+}
+
+.trabajo span {
+  color: #d03d3d;
+}
+
+.trabajo:hover span {
+  color: #fff;
+}
+
+.anio {
+  font-weight: bold;
+  color: #444;
+  margin: 6px 0 10px;
+}
+
+.descripcion {
+  text-align: justify;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.trabajo:hover .descripcion {
+  color: #fff;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 700px) {
+  .experiencia {
+    padding: 25px;
+  }
+
+  .experiencia h1 {
+    font-size: 1.6rem;
+  }
+
+  .trabajo {
+    padding: 15px;
+  }
+
+  .trabajo h2 {
+    font-size: 1.1rem;
+  }
+
+  .btn-volver {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+  }
+}

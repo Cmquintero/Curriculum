@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificaciones | Carlos Mario Quintero</title>
+    <link rel="stylesheet" href="../css/edu.css">
+</head>
+<div id="lightbox">
+  <img src="" alt="Certificado ampliado">
+</div>
+
+<body>
+    <header class="header-cert">
+        <h1>📜 Certificaciones y Reconocimientos</h1>
+        <p>Estos son algunos de mis logros académicos y formativos obtenidos a lo largo de mi trayectoria.</p>
+        <a href="../index.html" class="btn-volver">← Volver a la Hoja de Vida</a>
+    </header>
+
+    <main class="galeria">
+        <div class="cert">
+            <img src="../img/Titulo.jpg" alt="Título de Bachillerato">
+            <p>Título de Bachillerato - Colegio Lucio Pabón Núñez (2021)</p>
+        </div>
+        <div class="cert">
+            <img src="../img/Acta.jpg" alt="Acta de Grado">
+            <p>Acta de Grado - Colegio Lucio Pabón Núñez</p>
+        </div>
+        <div class="cert">
+            <img src="../img/Certificacion.jpg" alt="Certificación SENA">
+            <p>Técnico en Instalaciones Eléctricas Residenciales - SENA (2021)</p>
+        </div>
+        <div class="cert">
+            <img src="../img/FirmaSubdirector.jpg" alt="Firma Subdirector">
+            <p>Validación y firma del Subdirector SENA</p>
+        </div>
+        <div class="cert">
+            <img src="../img/Certificado - Curso a fondo de GitHub (2)_page-0001.jpg" alt="Curso GitHub">
+            <p>Certificado del curso “GitHub a fondo”</p>
+        </div>
+        <div class="cert">
+            <img src="../img/certificate1-fullstack.png" alt="Certificado FullStack 1">
+            <p>Certificación Full Stack Open - Módulo 1</p>
+        </div>
+        <div class="cert">
+            <img src="../img/certificate2-fullstack.png" alt="Certificado FullStack 2">
+            <p>Certificación Full Stack Open - Módulo 2</p>
+        </div>
+        <div class="cert">
+            <img src="../img/descarga_page-0001.jpg" alt="Certificado adicional">
+            <p>Carrera actual - Reconicimiento actual como estudiante</p>
+        </div>
+    </main>
+
+    <footer class="footer-cert">
+        <p>© 2025 Carlos Mario Quintero Trigos | Todos los derechos reservados</p>
+    </footer>
+<script>
+  const images = document.querySelectorAll('.cert img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox.querySelector('img');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
